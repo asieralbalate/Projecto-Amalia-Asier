@@ -1,4 +1,5 @@
 import java.io.*
+import java.util.*
 
 
 class Disco(codigoUnico: Int, titulo: String, autor: String, precio: Float, stock: Int) {
@@ -16,9 +17,8 @@ class Disco(codigoUnico: Int, titulo: String, autor: String, precio: Float, stoc
         this.stock = stock
     }
 
-    fun leerDeTeclado() {
-        val input = BufferedReader(InputStreamReader(System.`in`)).readLine()
-        println("Introduce un disco o un autor: ")
+    fun leerDeTeclado(autor: String) {
+
     }
 
     override fun toString(): String {

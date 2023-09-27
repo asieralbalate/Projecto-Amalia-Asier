@@ -33,6 +33,7 @@ class GestorConsultas(stream: RandomAccessFile){
 
     init {
         this.stream = stream
+        creaFichero("Discos.dat")
     }
 
     fun cierraGestor(){
